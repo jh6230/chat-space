@@ -1,12 +1,10 @@
-# README
-
-# chat-space DB設計
+# DB設計
 
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|srring|null:false, add_index:true|
-|e_mail|string|null:false, unique:true|
+|name|srring|null:false, index:true|
+|mail|string|null:false, unique:true|
 |password|string|null:false|
 ### Association
 - has_many :messages
@@ -16,7 +14,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |body|text|null:false|
-|image|string|-------|
+|image|string|null:true|
 |group_id|integer|null:false, foreign_key: true|
 |user_id|integer|null:false, foreigh_key: true|
 ### Association
@@ -36,8 +34,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |group_name|string|null:false|
-
 ### Association
-
+class 
 - has_many :messages
 - has_many :users, through: :groups_users
