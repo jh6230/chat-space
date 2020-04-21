@@ -1,0 +1,59 @@
+// サイドバー
+.chat-side{
+  height: 100%;
+  width: 300px;
+  background-color: #253141;
+  float: left;
+  // サイドヘッダー
+  &__header{
+    height: 100px;
+    width: 300px;
+    background-color: #253141;
+    display: flex;
+    align-items: center;
+    // サイドヘッダーボックス
+    &__box{
+      height: 20px;
+      width: 260px;
+      margin: 0 20px;
+      line-height: 20px;
+      color: #ffffff;
+      font-size: 16px;
+      display: flex;
+      justify-content: space-between;
+     &__icon{
+       display: flex;
+       .edit{
+         text-decoration: none;
+         color: #ffffff;
+         margin-right: 5px;
+       }
+       .cog{
+         text-decoration: none;
+         color:#ffffff;
+       }
+     }
+    }
+  }
+  &__lists{
+    height: calc(100vh - 100px);
+    width: 300px;
+    background-color: #2f3e51;
+    .list{
+      height: 85px;
+      width: 300px;
+      .group-name{
+        font-size: 15px;
+        color: #ffffff;
+        margin-left: 20px;
+        padding-top: 20px;
+      }
+      .latest-message{
+        font-size: 11px;
+        color: #ffffff;
+        margin-left: 20px;
+        padding-top:5px;
+      }
+    }
+  }
+ }

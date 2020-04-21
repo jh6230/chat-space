@@ -1,0 +1,25 @@
+
+.chat-side
+ .chat-side__header
+  .chat-side__header__box
+   %p.chat-side-header__box__name<>
+    JUN
+   %ul.chat-side__header__box__icon
+    %li.edit-icon
+    = link_to "#", class: "edit" do
+     %i.far.fa-edit
+    %li.set-icon
+    = link_to "#", class: "cog" do
+     %i.fas.fa-cog
+ .chat-side__lists
+  .list
+   %p.group-name<>
+    グループ名
+   %p.latest-message<>
+    新着メッセージ
+
+  .list
+   %p.group-name<>
+    グループ名
+   %p.latest-message<>
+    新着メッセージ
