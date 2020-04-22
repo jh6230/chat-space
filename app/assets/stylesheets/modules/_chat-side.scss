@@ -22,11 +22,12 @@
       display: flex;
       justify-content: space-between;
      &__icon{
+       font-size: 0.9rem;
        display: flex;
        .edit{
          text-decoration: none;
          color: #ffffff;
-         margin-right: 5px;
+         margin-left: 5px;
        }
        .cog{
          text-decoration: none;
