@@ -10,22 +10,14 @@
         Edit
 
   .chat-main__messages
-    .message
-      .user-info
-        %p.user-name<>
-          JUN
-        %p.post-time<>
-          2020-04-21 20:20
-      %p.message-text<>
-        新着メッセージ
-
+    = render @messages 
   .chat-main__form
     .form
       = form_for [@group, @message] do |f|
         .input-box
           = f.text_field :body, class: "input-box__text", placeholder: "type a message"
           .input-box__image
-            = f.label :image do
+            = f.label :image, class: "input-box__image" do
               = icon('fas', 'image')
             = f.file_field :image, class: "input-box__file"
         =f.submit 'Send', class: "submit-btn", value: "Send"

@@ -7,10 +7,11 @@
   width: calc(100vw - 300px);
   background-color: #d2d2d2;
   .form{
-    padding: 20px 40px;
+    
     .new_message{
       display: flex;
       align-items: center;
+      padding: 20px 40px;
     .input-box{
       position: relative;
     &__text{
@@ -23,8 +24,8 @@
    &__image{
      font-size: 1.3rem;
      position: absolute;
-     top: 10px;
-     right: 10px;
+     top: 5px;
+     right: 5px;
      cursor: pointer;
    }
    &__file{
