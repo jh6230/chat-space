@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+  text-decoration: none;
+}
 
 .chat-side{
   height: 100%;
@@ -25,32 +29,30 @@
        font-size: 0.9rem;
        display: flex;
        .edit{
-         text-decoration: none;
          color: #ffffff;
          margin-left: 5px;
        }
        .cog{
-         text-decoration: none;
          color:#ffffff;
        }
      }
     }
   }
 
-  &__lists{
+  &__groups{
     height: calc(100vh - 100px);
     width: 300px;
     background-color: #2f3e51;
-    .list{
+    .group{
       height: 85px;
       width: 300px;
-      .group-name{
+      &__name{
         font-size: 15px;
         color: #ffffff;
         margin-left: 20px;
         padding-top:20px;
       }
-      .latest-message{
+      &__message{
         font-size: 11px;
         color: #ffffff;
         margin-left: 20px;
