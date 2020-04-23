@@ -6,20 +6,26 @@
         = current_user.name
       %ul.chat-side__header__box__icon
         %li.edit-icon
-        = link_to "#", class: "cog" do
+        = link_to new_group_path, class: "cog" do
           %i.far.fa-edit
         %li.set-icon
         = link_to edit_user_path(current_user), class: "edit" do
           %i.fas.fa-cog
-  .chat-side__lists  
-    .list
-      %p.group-name<>
-        グループ名
-      %p.latest-message<>
-        新着メッセージ
-    
-    .list
-      %p.group-name<>
-        グループ名
-      %p.latest-message<>
-        新着メッセージ
+  .chat-side__groups  
+    - current_user.groups.each do |group|
+      .group
+        = link_to "#" do
+          .group__name<>
+            = group.name
+          .group__message<>
+            メッセージはまだありません
+
+
+
+
+
+
+
+
+
+
