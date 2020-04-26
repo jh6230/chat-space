@@ -32,7 +32,6 @@ RSpec.describe Message, type: :model do
       it ' user_idが無いと保存できないこと' do
         message = build(:message, user_id: nil)
         message.valid?
-        binding.pry
         expect(message.errors[:user]).to include("を入力してください")
       end
     end
