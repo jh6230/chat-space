@@ -54,7 +54,9 @@ $(function(){
       $('.submit-btn').prop('disabled', false);
   })
   .fail(function(){
-    alert('メッセージを入力してください');
+      alert('メッセージを入力してください');
+      $('.submit-btn').prop('disabled', false);
+
   })
 })
 });
