@@ -39,3 +39,12 @@
 - has_many :messages
 - has_many :users, through: :groups_users
 - has_many :groups_users
+
+# 開発に使用している技術
+- BEMによる命名規則を使用したHaml、Sassによるフロントマークアップ
+- 中間テーブルを使用した多対多のテーブル間のアソシエーション
+- javascript（Jquery）を使用したメッセージの非同期通信、インクリメンタルリサーチ、SetIntervalメソッドを使用した自動更新機能
+- AWS、EC2インスタンスの立ち上げ
+- Capsitranoによる自動デプロイ
+
+
