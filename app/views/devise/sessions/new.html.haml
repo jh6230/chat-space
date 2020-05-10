@@ -4,6 +4,12 @@
       %h2 Log in
       %h5 登録しているユーザーでログイン
       = render "devise/shared/links"
+      .tell-user
+        %p
+          こちらのアカウントでログインしてください
+        Email:  user@gmail.com
+        %br/
+        Password:  Passw0rd
     .account-page__inner--right.user-form
       = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
         .field
